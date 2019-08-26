@@ -57,3 +57,34 @@
 ### head(data)
 ### tail(data)
 ### dim(data)
+
+### Mujeres<-data$sexo=="Mujer"
+### Mujeres
+### data$MRI[Mujeres]
+### mean(data$MRI[Mujeres])
+### Hombres<-data$sexo=="Hombre"
+### Hombres
+### data$MRI[Hombres]
+### mean(data$MRI[Hombres])
+### meanM<-mean(data$MRI[Mujeres])
+### meanM
+### diferencia<-(data$MRI[Mujeres]-meanM)
+### diferencia
+### varianza<-sum(diferencia^2)/(length(data$MRI[Mujeres])-1)
+### varianza
+### sdMujeres<-sqrt(varianza)
+### sdMujeres
+### var(data$MRI[Mujeres])
+### sd(data$MRI[Mujeres])
+### var(data$MRI[Hombres])
+### sd(data$MRI[Hombres])
+### cvM<-sd(data$MRI[Mujeres])/mean(data$MRI[Mujeres])
+### cvM
+### cvH<-sd(data$MRI[Hombres])/mean(data$MRI[Hombres])
+### cvH
+### promedio_MRI<-tapply(data$MRI,data$sexo,mean)
+### promedio_MRI
+### sd_MRI<-tapply(data$MRI,data$sexo,sd)
+### sd_MRI
+### boxplot(data$MRI~data$sexo,ylab="MRI")
+### boxplot(data$FSIQ~data$sexo,ylab="Puntaje FSIQ")
